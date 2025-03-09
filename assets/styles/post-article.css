@@ -46,3 +46,8 @@
     content: attr(data-value) !important;
   }
 }
+
+.ql-video {
+  width: 100%;
+  height: 320px;
+}
