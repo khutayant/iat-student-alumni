@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IAT Sutdent Alumni System - Post Article Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.icon.css" />
+    <script src="../../bootstrap/bootstrap.js"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../../assets/images/iat-logo.png" />
+
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/post-article.css" />
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+  </head>
+  <body class="bg-light">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+      <div class="container-fluid d-flex">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img
+                src="../assets/images/iat-logo.png"
+                alt="Logo"
+                class="logo"
+              />
+              IAT Student Alumni System
+            </a>
+          </li>
+        </ul>
+
+        <!-- Spacer -->
+        <div class="flex-fill"></div>
+
+        <!-- Account -->
+        <div class="account d-flex align-items-center justify-content-center">
+          <img
+            src="../assets/svgs/profile.svg"
+            alt="Account"
+            class="account-icon"
+          />
+
+          <span class="d-none d-md-flex ms-1 fw-bold" style="color: white">
+            User's Name
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Toolbar -->
+    <div id="toolbar" class="d-flex justify-content-center"></div>
+
+    <!-- Container -->
+    <div class="container mt-4">
+      <!-- Title -->
+      <div class="title-holder d-flex p-2">
+        <span class="fs-4 fw-bold">Article</span>
+
+        <div class="flex-fill"></div>
+
+        <button class="btn btn-sm btn-primary">SAVE ARTICLE</button>
+      </div>
+
+      <!-- Editor -->
+      <div class="editor-holder p-md-5 shadow rounded mt-3 mb-5">
+        <div id="editor"></div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      const Size = Quill.import("attributors/style/size");
+      Size.whitelist = [
+        "10px",
+        "12px",
+        "14px",
+        "16px",
+        "18px",
+        "24px",
+        "32px",
+        "40px",
+      ]; // Custom sizes
+      Quill.register(Size, true);
+
+      const toolbarOptions = [
+        [{ font: [] }],
+        [{ size: Size.whitelist }], // custom dropdown
+        [{ header: [1, 2, 3, 4, 5, 6, false] }], // header
+
+        ["bold", "italic", "underline", "strike"], // toggled buttons
+        ["blockquote", "code-block"],
+        ["link", "image", "video"],
+
+        [{ list: "ordered" }, { list: "bullet" }, { list: "check" }],
+        [{ script: "sub" }, { script: "super" }], // superscript/subscript
+        [{ indent: "-1" }, { indent: "+1" }], // outdent/indent
+        [{ direction: "rtl" }], // text direction
+
+        [{ color: [] }, { background: [] }], // dropdown with defaults from theme
+        [{ align: [] }],
+
+        ["clean"], // remove formatting button
+      ];
+
+      const quill = new Quill("#editor", {
+        theme: "snow",
+        placeholder: "Type your text here...",
+        modules: {
+          toolbar: toolbarOptions,
+        },
+      });
+
+      const quillToolbar = document.querySelector("[role=toolbar]");
+      const myToolbar = document.getElementById("toolbar");
+      myToolbar.appendChild(quillToolbar);
+    </script>
+  </body>
+</html>

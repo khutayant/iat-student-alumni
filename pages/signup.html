@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IAT Sutdent Alumni System - Signup Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css" />
+    <script src="../../bootstrap/bootstrap.js"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../../assets/images/iat-logo.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/styles/login.css" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <form action="#" class="login-form shadow-lg p-3 rounded">
+      <div class="form-header d-flex align-items-center">
+        <img
+          src="../../assets/images/iat-logo.png"
+          alt="Logo"
+          class="header-logo"
+        />
+        <div class="header-info">
+          <h3>IAT Student Alumni</h3>
+          <h6 class="text-secondary">Create new account</h6>
+        </div>
+      </div>
+
+      <!-- Name -->
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter name"
+          name="name"
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="pwd"
+          placeholder="Enter password"
+          name="pwd"
+        />
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="mb-3">
+        <input
+          type="password"
+          class="form-control"
+          id="confirm-pwd"
+          placeholder="Confirm password"
+          name="confirm-pwd"
+        />
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary w-100">SIGN UP</button>
+
+      <br />
+      <br />
+      <p class="w-100 text-center">
+        Already have an account? <a href="./login.html">Login here</a>
+      </p>
+
+      <!-- Forgot password -->
+      <p class="w-100 text-center">
+        <a href="./forgot-password.html">Forgot password</a>
+      </p>
+    </form>
+  </body>
+</html>

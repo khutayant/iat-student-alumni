@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IAT Sutdent Alumni System - Profile Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.icon.css" />
+    <script src="../../bootstrap/bootstrap.js"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../../assets/images/iat-logo.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/styles/profile.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+      <div class="container-fluid d-flex">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img
+                src="../assets/images/iat-logo.png"
+                alt="Logo"
+                class="logo"
+              />
+              IAT Student Alumni System
+            </a>
+          </li>
+        </ul>
+
+        <!-- Spacer -->
+        <div class="flex-fill"></div>
+
+        <!-- Account -->
+        <div class="account d-flex align-items-center justify-content-center">
+          <img
+            src="../assets/svgs/profile.svg"
+            alt="Account"
+            class="account-icon"
+          />
+
+          <span class="d-none d-md-flex ms-1 fw-bold" style="color: white">
+            User's Name
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container position-relative">
+      <!-- Cover -->
+      <div class="cover mb-4 mt-4 position-relative">
+        <button class="edit-cover btn btn-sm btn-outline-primary">Edit</button>
+      </div>
+
+      <!-- Profile -->
+      <img
+        src="../assets/svgs/profile.svg"
+        alt="Profile"
+        class="profile-image"
+      />
+      <button class="edit-profile-image">
+        <i class="bi bi-camera"></i>
+      </button>
+
+      <!-- Info -->
+      <div class="info d-flex flex-column align-items-center mb-4">
+        <div class="name fs-3 fw-bold">User's Name</div>
+        <div class="class-name fw-light">Diploma in Software Engineering</div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="col-12 mb-5">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <div class="row">
+              <!-- Navigations -->
+              <div class="col-lg-4">
+                <div class="p-4">
+                  <div class="nav flex-column nav-pills">
+                    <a href="./profile.html" class="nav-link mb-2">
+                      Personal Information
+                    </a>
+                    <a
+                      href="./profile-security.html"
+                      class="nav-link mb-2 active"
+                    >
+                      Security
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="col-lg-8">
+                <div class="d-flex">
+                  <p class="fw-bold flex-fill">Security</p>
+                </div>
+
+                <!-- Security -->
+                <div class="d-flex flex-column align-items-center">
+                  <div class="security-container">
+                    <label
+                      for="old-password"
+                      class="form-label text-center w-100 fw-bold mb-4"
+                    >
+                      Change Password
+                    </label>
+
+                    <div class="mb-4 w-100">
+                      <label for="old-password" class="form-label">
+                        Old Password:
+                      </label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="old-password"
+                        placeholder="Enter old password"
+                        name="oldPassword"
+                      />
+                    </div>
+
+                    <div class="mb-3 w-100">
+                      <label for="new-password" class="form-label">
+                        New password:
+                      </label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="new-password"
+                        placeholder="Enter new password"
+                        name="newPassword"
+                      />
+                    </div>
+
+                    <div class="mb-4 w-100">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirm-new-password"
+                        placeholder="Confirm new password"
+                        name="confirmNewPassword"
+                      />
+                    </div>
+
+                    <button class="btn btn-primary w-100 mb-3">
+                      CHANGE PASSWORD
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

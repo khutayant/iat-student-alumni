@@ -1,0 +1,48 @@
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: white;
+  padding: 4px;
+}
+
+.account {
+  .account-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}
+
+.title-holder {
+  margin: auto;
+  width: min(800px, 100%);
+}
+
+#toolbar {
+  position: sticky;
+  top: 68px;
+  z-index: 1;
+  background: white;
+}
+
+.editor-holder {
+  background: white;
+  margin: auto;
+  width: min(800px, 100%);
+}
+
+#editor {
+  width: 100%;
+  border: none;
+}
+
+.ql-size {
+  .ql-picker-label::before {
+    content: attr(data-value) !important;
+  }
+  .ql-picker-item::before {
+    content: attr(data-value) !important;
+  }
+}

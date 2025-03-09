@@ -1,0 +1,28 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/images/iat-students.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
+}
+
+.login-form {
+  width: min(360px, 90%);
+  height: fit-content;
+  /* background: linear-gradient(160deg, #fde4ffcc, #d272d8aa); */
+  background: white;
+
+  .header-logo {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    margin-right: 16px;
+  }
+}

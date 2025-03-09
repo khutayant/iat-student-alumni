@@ -1,0 +1,73 @@
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: white;
+  padding: 4px;
+}
+
+.account {
+  .account-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}
+
+.cover {
+  width: 100%;
+  height: 200px;
+  border-radius: 24px;
+  background: linear-gradient(130deg, #c12ccb, #fab9ff);
+
+  .edit-cover {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+  }
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%, -20%);
+  border: 6px solid white;
+}
+
+.edit-profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(calc(-95% + 60px), 60px);
+  border: none;
+  background: #c12ccb;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.info {
+  padding-top: 76px;
+}
+
+.biography {
+  height: 15em;
+  resize: none;
+}
+
+.address {
+  height: 5em;
+  resize: none;
+}
+
+.security-container {
+  width: min(100%, 400px);
+}

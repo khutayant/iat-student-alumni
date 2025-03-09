@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IAT Sutdent Alumni System - Profile Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.icon.css" />
+    <script src="../../bootstrap/bootstrap.js"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../../assets/images/iat-logo.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/styles/profile.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+      <div class="container-fluid d-flex">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img
+                src="../assets/images/iat-logo.png"
+                alt="Logo"
+                class="logo"
+              />
+              IAT Student Alumni System
+            </a>
+          </li>
+        </ul>
+
+        <!-- Spacer -->
+        <div class="flex-fill"></div>
+
+        <!-- Account -->
+        <div class="account d-flex align-items-center justify-content-center">
+          <img
+            src="../assets/svgs/profile.svg"
+            alt="Account"
+            class="account-icon"
+          />
+
+          <span class="d-none d-md-flex ms-1 fw-bold" style="color: white">
+            User's Name
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container position-relative">
+      <!-- Cover -->
+      <div class="cover mb-4 mt-4 position-relative">
+        <button class="edit-cover btn btn-sm btn-outline-primary">Edit</button>
+      </div>
+
+      <!-- Profile -->
+      <img
+        src="../assets/svgs/profile.svg"
+        alt="Profile"
+        class="profile-image"
+      />
+      <button class="edit-profile-image">
+        <i class="bi bi-camera"></i>
+      </button>
+
+      <!-- Info -->
+      <div class="info d-flex flex-column align-items-center mb-4">
+        <div class="name fs-3 fw-bold">User's Name</div>
+        <div class="class-name fw-light">Diploma in Software Engineering</div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="col-12 mb-5">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <div class="row">
+              <!-- Navigations -->
+              <div class="col-lg-4">
+                <div class="p-4">
+                  <div class="nav flex-column nav-pills">
+                    <a href="./profile.html" class="nav-link mb-2 active">
+                      Personal Information
+                    </a>
+                    <a href="./profile-security.html" class="nav-link mb-2">
+                      Security
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="col-lg-8">
+                <div class="d-flex">
+                  <p class="fw-bold flex-fill">Personal Information</p>
+
+                  <button class="btn btn-sm btn-outline-primary">Edit</button>
+                </div>
+
+                <!-- Information -->
+                <div class="personal-information col-12">
+                  <!-- Row 1 -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Enter name"
+                          name="name"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Enter email"
+                          name="email"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Row 2 -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="date-of-birth" class="form-label"
+                          >Date of birth:</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="date-of-birth"
+                          placeholder="Enter name"
+                          name="dateOfBirth"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="gender" class="form-label">Gender:</label>
+                        <select name="gender" id="gender" class="form-select">
+                          <option value="Select">Select</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Row 3 -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="phone" class="form-label">Phone:</label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="phone"
+                          placeholder="Enter phone"
+                          name="phone"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Row 4 -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="biography" class="form-label">
+                          Biography:
+                        </label>
+                        <textarea
+                          class="form-control biography"
+                          id="biography"
+                          placeholder="Enter biography"
+                          name="biography"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Row 5 -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="address" class="form-label">
+                          Address:
+                        </label>
+                        <textarea
+                          class="form-control address"
+                          id="address"
+                          placeholder="Enter address"
+                          name="address"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
